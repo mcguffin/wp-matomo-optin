@@ -1,7 +1,13 @@
 WP Matomo OptIn
 ===============
 
-#### Developer info here. ####
+Frontend Opt-In Dialog for WP-Matomo.
+Unlike other solutions this one is supposed to work with caching.
+
+
+Current Status
+--------------
+Heavy development. Might be unstable and/or harmful. Help appreciated.
 
 
 Installation
@@ -29,5 +35,6 @@ ToDo:
  - [x] Respect DNT Header
  - [x] PLL Strings
  - [x] Move asset loading to compat
+ - [x] Status messages
  - [ ] Set Cookie Lifetime 3 months
  - [ ] Allow Dialog Theme override
