@@ -1,44 +1,48 @@
 # Copyright (C) 2018 joern
 # This file is distributed under the GNU General Public License v2 or later.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Matomo OptIn v0.0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-26T17:05:14+00:00\n"
-"PO-Revision-Date: 2018-11-26T17:05:14+00:00\n"
+"PO-Revision-Date: 2018-11-26 18:09+0100\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: WP Make Pot\n"
+"X-Generator: Poedit 2.0.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
 "esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
 "esc_html_x:1,2c\n"
 "X-Textdomain-Support: yes\n"
-"X-Poedit-Basepath: ./\n"
-"Last-Translator: \n"
+"X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:27
 msgid "Allow Tracking?"
-msgstr ""
+msgstr "Tracking erlauben?"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:28
-msgid "Please allow us to track your visit. The collected data is kept anonymous and will not be shared with others."
+msgid ""
+"Please allow us to track your visit. The collected data is kept anonymous "
+"and will not be shared with others."
 msgstr ""
+"Bitte erlaube uns Deinen Besuch zu tracken. Die gesammelten Daten sind "
+"anonym und wir geben sie nciht an Dritte weiter."
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:29
 msgid "Yes, you may track my Visits"
-msgstr ""
+msgstr "Ja, meinen Besuch aufzeichnen"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:30
 msgid "No, I prefer to stay under the Radar"
-msgstr ""
+msgstr "Nein, ich bleibe lieber unter dem Radar"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:48
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:60
@@ -51,7 +55,7 @@ msgstr ""
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:66
 msgid "Save Settings"
-msgstr ""
+msgstr "Einstellungen sichern"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:93
 msgid "Section #1"
@@ -59,32 +63,32 @@ msgstr ""
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:100
 msgid "Dialog Title"
-msgstr ""
+msgstr "Dialog TItel"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:113
 msgid "Dialog Text"
-msgstr ""
+msgstr "Dialog text"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:126
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:141
 msgid "Allow Button Label "
-msgstr ""
+msgstr "Beschriftung Erlauben-Button"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:155
 msgid "Allow Button CSS Class "
-msgstr ""
+msgstr "Erlauben-Button CSS-Klasse"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:169
 msgid "Forbid Button CSS Class "
-msgstr ""
+msgstr "Verbieten-Buttin CSS-Klassen"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:183
 msgid "Dialog CSS Class "
-msgstr ""
+msgstr "Dialog CSS-Klasse"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:197
 msgid "Wrapper CSS Class "
-msgstr ""
+msgstr "Dialog-Wrapper CSS-Klassen"
 
 #: include/MatomoOptin/Settings/SettingsMatomoOptin.php:216
 msgid "..."
@@ -92,13 +96,12 @@ msgstr ""
 
 #: include/templates/cookie-dialog.php:44
 msgid "Your Visits are being tracked."
-msgstr ""
+msgstr "Deine Besuche werden aufgezeichnet."
 
 #: include/templates/cookie-dialog.php:47
 msgid "Your Visits are not tracked."
-msgstr ""
+msgstr "Deine Besuche werden nicht aufgezeichnet."
 
 #: include/templates/cookie-dialog.php:50
 msgid "Change Settings"
-msgstr ""
-
+msgstr "Einstellung ändern"

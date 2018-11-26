@@ -23,3 +23,11 @@ Installation
  - $ `cd wp-matomo-optin`
  - $ `npm install`
  - $ `gulp`
+
+ToDo:
+-----
+ - [x] Respect DNT Header
+ - [x] PLL Strings
+ - [x] Move asset loading to compat
+ - [ ] Set Cookie Lifetime 3 months
+ - [ ] Allow Dialog Theme override

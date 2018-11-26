@@ -13,8 +13,8 @@ $dialog_cls = explode( ' ', get_option( 'matomo_optin_dialog_class' ) );
 $dialog_cls = array_map( 'sanitize_html_class', $dialog_cls );
 
 ?>
-<div class="matomo-optin-dialog-wrap">
-	<div class="matomo-optin-dialog" role="dialog">
+<div class="matomo-optin-dialog-wrap <?php echo $wrapper_cls ?>">
+	<div class="matomo-optin-dialog <?php echo $dialog_cls ?>" role="dialog">
 		<h2 class="matomo-optin-title">
 			<?php esc_html_e( get_option( 'matomo_optin_dialog_title' ) ); ?>
 		</h2>

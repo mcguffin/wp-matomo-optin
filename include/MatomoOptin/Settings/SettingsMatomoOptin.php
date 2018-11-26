@@ -88,9 +88,9 @@ class SettingsMatomoOptin extends Settings {
 	 */
 	public function register_settings() {
 
-		$settings_section	= 'matomo_optin_settings';
+		$settings_section	= 'matomo_optin_settings_labels';
 
-		add_settings_section( $settings_section, __( 'Section #1',  'wp-matomo-optin' ), array( $this, 'section_1_description' ), $this->optionset );
+		add_settings_section( $settings_section, __( 'Labels',  'wp-matomo-optin' ), null, $this->optionset );
 
 		// more settings go here ...
 		$option_name		= 'matomo_optin_dialog_title';
@@ -123,7 +123,7 @@ class SettingsMatomoOptin extends Settings {
 		register_setting( $this->optionset , $option_name, array( $this , 'sanitize_setting_1' ) );
 		add_settings_field(
 			$option_name,
-			__( 'Allow Button Label ',  'wp-matomo-optin' ),
+			__( 'Allow Button Label',  'wp-matomo-optin' ),
 			array( $this, 'text_ui' ),
 			$this->optionset,
 			$settings_section,
@@ -138,7 +138,7 @@ class SettingsMatomoOptin extends Settings {
 		register_setting( $this->optionset , $option_name, array( $this , 'sanitize_setting_1' ) );
 		add_settings_field(
 			$option_name,
-			__( 'Allow Button Label ',  'wp-matomo-optin' ),
+			__( 'Forbid Button Label',  'wp-matomo-optin' ),
 			array( $this, 'text_ui' ),
 			$this->optionset,
 			$settings_section,
@@ -148,11 +148,17 @@ class SettingsMatomoOptin extends Settings {
 		);
 
 
+
+		$settings_section	= 'matomo_optin_settings_css';
+
+		add_settings_section( $settings_section, __( 'Markup',  'wp-matomo-optin' ), null, $this->optionset );
+
+
 		$option_name		= 'matomo_optin_button_class_allow';
 		register_setting( $this->optionset , $option_name, array( $this , 'sanitize_setting_1' ) );
 		add_settings_field(
 			$option_name,
-			__( 'Allow Button CSS Class ',  'wp-matomo-optin' ),
+			__( 'Allow Button CSS Class',  'wp-matomo-optin' ),
 			array( $this, 'text_ui' ),
 			$this->optionset,
 			$settings_section,
@@ -166,7 +172,7 @@ class SettingsMatomoOptin extends Settings {
 		register_setting( $this->optionset , $option_name, array( $this , 'sanitize_setting_1' ) );
 		add_settings_field(
 			$option_name,
-			__( 'Forbid Button CSS Class ',  'wp-matomo-optin' ),
+			__( 'Forbid Button CSS Class',  'wp-matomo-optin' ),
 			array( $this, 'text_ui' ),
 			$this->optionset,
 			$settings_section,
@@ -180,7 +186,7 @@ class SettingsMatomoOptin extends Settings {
 		register_setting( $this->optionset , $option_name, array( $this , 'sanitize_setting_1' ) );
 		add_settings_field(
 			$option_name,
-			__( 'Dialog CSS Class ',  'wp-matomo-optin' ),
+			__( 'Dialog CSS Class',  'wp-matomo-optin' ),
 			array( $this, 'text_ui' ),
 			$this->optionset,
 			$settings_section,
@@ -194,7 +200,7 @@ class SettingsMatomoOptin extends Settings {
 		register_setting( $this->optionset , $option_name, array( $this , 'sanitize_setting_1' ) );
 		add_settings_field(
 			$option_name,
-			__( 'Wrapper CSS Class ',  'wp-matomo-optin' ),
+			__( 'Wrapper CSS Class',  'wp-matomo-optin' ),
 			array( $this, 'text_ui' ),
 			$this->optionset,
 			$settings_section,
@@ -204,18 +210,6 @@ class SettingsMatomoOptin extends Settings {
 		);
 
 
-	}
-
-	/**
-	 * Print some documentation for the optionset
-	 */
-	public function section_1_description( $args ) {
-
-		?>
-		<div class="inside">
-			<p><?php _e( '...' , 'wp-matomo-optin' ); ?></p>
-		</div>
-		<?php
 	}
 
 	/**

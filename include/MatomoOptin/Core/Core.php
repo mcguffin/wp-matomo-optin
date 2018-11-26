@@ -23,25 +23,8 @@ class Core extends Plugin {
 		add_action( 'plugins_loaded' , array( $this , 'init_compat' ), 0 );
 		add_action( 'init' , array( $this , 'init' ) );
 
-		add_action( 'wp_enqueue_scripts' , array( $this , 'wp_enqueue_scripts' ) );
-		add_action( 'wp_footer', array($this,'print_dialog'));
-
 		$args = func_get_args();
 		parent::__construct( ...$args );
-	}
-
-	public function print_dialog() {
-		include $this->get_asset_path('include/templates/cookie-dialog.php');
-	}
-
-	/**
-	 *	Load frontend styles and scripts
-	 *
-	 *	@action wp_enqueue_scripts
-	 */
-	public function wp_enqueue_scripts() {
-		wp_enqueue_script('matomo-optin',$this->get_asset_url('js/matomo-optin.js'),array('jquery'));
-		wp_enqueue_style('matomo-optin',$this->get_asset_url('css/matomo-optin.css'),array());
 	}
 
 

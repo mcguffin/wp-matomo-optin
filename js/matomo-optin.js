@@ -3,6 +3,12 @@
 	var name = 'allow-matomo-tracking',
 		allow;
 
+	// respect DNT setting
+	if ( navigator.doNotTrack ) {
+		$('html').attr('data-'+name,'no');
+		return;
+	}
+
 	function get_storage() {
 		if ( window.localStorage ) {
 			return window.localStorage;
@@ -27,7 +33,7 @@
 		};
 	}
 	var preset = get_storage().getItem(name);
-	console.log(preset)
+
 	if ( preset === null ) {
 		// wait
 		setTimeout(function(){

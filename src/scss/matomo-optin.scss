@@ -2,6 +2,10 @@
 
 @import 'variables/variables';
 
+[data-allow-matomo-tracking="unknown"] {
+	overflow:hidden;
+}
+
 .matomo-optin-dialog-wrap {
 	position:fixed;
 	left:0;

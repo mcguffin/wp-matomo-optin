@@ -1,0 +1,8 @@
+<wpml-config>
+    <admin-texts>
+		<key name="matomo_optin_dialog_title" />
+		<key name="matomo_optin_dialog_message" />
+		<key name="matomo_optin_button_label_allow" />
+		<key name="matomo_optin_button_label_forbid" />
+    </admin-texts>
+</wpml-config>
