@@ -33,3 +33,23 @@
 		top:10vh;
 	}
 }
+.matomo-optin-status {
+	text-align:center;
+	border-top:1px solid rgba(0,0,0,0.25);
+	font-size:smaller;
+	padding:0.5em 0;
+	[data-allow-matomo-tracking="unknown"] & {
+		display:none;
+	}
+	[data-allow-matomo-tracking="yes"] & {
+		.matomo-optin-status-no {
+			display:none;
+		}
+	}
+	[data-allow-matomo-tracking="no"] & {
+		.matomo-optin-status-yes {
+			display:none;
+		}
+	}
+
+}

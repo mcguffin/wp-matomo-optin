@@ -45,7 +45,7 @@ function _do_matomo_track(){%s}',$code);
 		// don\'t track
 	} else {
 		// ask
-		$(document).on(\'allow-matomo-tracking\',_do_matomo_track);
+		$(document).one(\'allow-matomo-tracking\',_do_matomo_track);
 	}
 })(jQuery);
 ';

@@ -30,11 +30,24 @@ $dialog_cls = array_map( 'sanitize_html_class', $dialog_cls );
 			esc_html( get_option( 'matomo_optin_button_label_allow' ) )
 		);
 
-		printf( '<button class="matomo-optin-button -allow %s" name="allow-matomo-tracking" value="yes">%s</button>',
+		printf( '<button class="matomo-optin-button -allow %s" name="allow-matomo-tracking" value="no">%s</button>',
 			implode( ' ' , $forbid_cls ),
 			esc_html( get_option( 'matomo_optin_button_label_forbid' ) )
 		);
 
 		?>
 	</div>
+</div>
+<div class="matomo-optin-status">
+	<p>
+		<span class="matomo-optin-status-yes">
+			<?php _e( 'Your Visits are being tracked.', 'wp-matomo-optin' ); ?>
+		</span>
+		<span class="matomo-optin-status-no">
+			<?php _e( 'Your Visits are not tracked.', 'wp-matomo-optin' ); ?>
+		</span>
+		<a href="#" class="matomo-optin-button -settings">
+			<?php _e('Change Settings','wp-matomo-optin') ?>
+		</a>
+	</p>
 </div>

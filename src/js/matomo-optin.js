@@ -5,7 +5,7 @@
 
 	function get_storage() {
 		if ( window.localStorage ) {
-			//return window.localStorage;
+			return window.localStorage;
 		}
 		return {
 			setItem:function(k,v) {
@@ -50,5 +50,10 @@
 			if ( val ) {
 				$(document).trigger(name);
 			}
-		});
+		})
+		.on('click','.matomo-optin-status a.-settings',function(e){
+			$('html').attr('data-' + name, 'unknown' );
+			e.preventDefault();
+		})
+		;
 })(jQuery)
