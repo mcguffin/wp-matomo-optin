@@ -53,7 +53,55 @@ abstract class Settings extends Core\PluginComponent {
 		<?php
 
 	}
-	
+
+
+	/**
+	 *	Print input
+	 *
+	 *	@param $args	array( $option_name, $label )
+	 */
+	public function text_ui( $args ) {
+		@list( $option_name, $label, $description ) = array_values( $args );
+
+		$option_value = get_option( $option_name );
+
+		?><label>
+			<input class="widefat" type="text" name="<?php echo $option_name ?>" value="<?php esc_attr_e( $option_value ) ?>" />
+			<?php echo $label ?>
+		</label>
+		<?php
+			if ( ! empty( $description ) ) {
+				printf( '<p class="description">%s</p>', $description );
+			}
+		?>
+		<?php
+
+	}
+
+	/**
+	 *	Print input
+	 *
+	 *	@param $args	array( $option_name, $label )
+	 */
+	public function textarea_ui( $args ) {
+		@list( $option_name, $label, $description ) = array_values( $args );
+
+		$option_value = get_option( $option_name );
+
+		?><label>
+			<textarea class="widefat" rows="6" name="<?php echo $option_name ?>"><?php echo esc_textarea( $option_value ) ?></textarea>
+			<?php echo $label ?>
+		</label>
+		<?php
+			if ( ! empty( $description ) ) {
+				printf( '<p class="description">%s</p>', $description );
+			}
+		?>
+		<?php
+
+	}
+
+
 	/**
 	 *	Sanitize checkbox input
 	 *

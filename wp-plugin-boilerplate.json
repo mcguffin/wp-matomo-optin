@@ -1,0 +1,21 @@
+{
+  "modules": {
+    "compat": {},
+    "core": {
+      "css": true,
+      "js": true
+    },
+    "git": {},
+    "gulp": {},
+    "settings": {
+      "Matomo OptIn": {}
+    }
+  },
+  "plugin_author": "J\u00f6rn Lund",
+  "plugin_author_uri": "",
+  "plugin_name": "WP Matomo OptIn",
+  "plugin_namespace": "MatomoOptin",
+  "plugin_slug": "matomo_optin",
+  "this_year": 2018,
+  "wp_plugin_slug": "wp-matomo-optin"
+}

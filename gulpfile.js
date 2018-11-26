@@ -49,20 +49,18 @@ function concat_js( src, dest ) {
 
 // scss tasks
 
-// scss admin tasks
+gulp.task( 'scss:frontend', function(){
+	return do_scss( 'matomo-optin');
+} );
 
 // scss
-gulp.task('scss', gulp.parallel(
-	
-	
-));
+gulp.task('scss', gulp.parallel( 'scss:frontend' ));
 
 // admin js
 
 
 gulp.task( 'js:frontend', function(){
-	return concat_js( [
-	], 'frontend.js');
+	return do_js( 'matomo-optin');
 } );
 
 gulp.task('js', gulp.parallel( 'js:frontend', ) );
