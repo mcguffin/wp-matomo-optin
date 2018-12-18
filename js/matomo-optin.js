@@ -4,7 +4,7 @@
 		allow;
 
 	// respect DNT setting
-	if ( navigator.doNotTrack ) {
+	if ( navigator.doNotTrack == 1 ) {
 		$('html').attr('data-'+name,'no');
 		return;
 	}
@@ -27,7 +27,6 @@
 					}
 					return false;
 				});
-				console.log(v)
 				return v;
 			},
 		};
