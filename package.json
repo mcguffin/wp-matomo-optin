@@ -1,6 +1,6 @@
 {
   "name": "wp-matomo-optin",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "Plugin description",
   "private": true,
   "scripts": {
@@ -25,5 +25,26 @@
     "gulp-sourcemaps": "*",
     "gulp-uglify": "*",
     "gulp-util": "*"
+  },
+  "wporg": {
+    "steps": [
+      "build",
+      "git",
+      "github"
+    ],
+    "type": "plugin",
+    "build": {
+      "prebuild": [
+        "wp i18n make-pot . languages/wp-matomo-optin.pot --domain=wp-matomo-optin --exclude=tmp"
+      ],
+      "build": []
+    },
+    "git": {
+      "host": "github.com",
+      "user": "mcguffin"
+    },
+    "wporg": {
+      "assets": ".wporg"
+    }
   }
 }
