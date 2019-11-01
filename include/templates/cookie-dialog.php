@@ -20,7 +20,7 @@ $dialog_cls = array_map( 'sanitize_html_class', $dialog_cls );
 		</h2>
 
 		<p class="matomo-optin-message">
-			<?php esc_html_e( get_option( 'matomo_optin_dialog_message' ) ); ?>
+			<?php echo nl2br( esc_html__( get_option( 'matomo_optin_dialog_message' ) ) ); ?>
 		</p>
 
 		<?php
@@ -30,7 +30,7 @@ $dialog_cls = array_map( 'sanitize_html_class', $dialog_cls );
 			esc_html( get_option( 'matomo_optin_button_label_allow' ) )
 		);
 
-		printf( '<button class="matomo-optin-button -allow %s" name="allow-matomo-tracking" value="no">%s</button>',
+		printf( '<button class="matomo-optin-button -deny %s" name="allow-matomo-tracking" value="no">%s</button>',
 			implode( ' ' , $forbid_cls ),
 			esc_html( get_option( 'matomo_optin_button_label_forbid' ) )
 		);
